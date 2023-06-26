@@ -28,3 +28,16 @@ Archivos principales:
 
 4) requirements.txt
 	Es necesario definir todos los módulos que se van a utilizar en el resource group para que pueda instalarlos en la maquina virtual que se crea.
+
+## SQL Database
+
+Example of a query to create a table with **ID THAT INCREASE AUTOMATICALLY AND STAMPTIME / IN BOTH CASES ARE NOT NECESSARY WIRTE WHEN YOU ADD A NEW ROW (AUTOMATICALLY ARE COMPLETED).
+
+```sql
+CREATE TABLE tokens_example
+(
+    [id] INT IDENTITY(1,1) PRIMARY KEY,
+    [token] NVARCHAR(500),
+    [date] DATETIME DEFAULT GETDATE()
+);
+```

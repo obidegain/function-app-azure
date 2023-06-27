@@ -41,3 +41,8 @@ CREATE TABLE tokens_example
     [date] DATETIME DEFAULT GETDATE()
 );
 ```
+
+Si quiero eliminar la tabla:
+```sql
+DROP TABLE [dbo].[tokens_example]
+```
